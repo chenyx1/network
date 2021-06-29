@@ -26,6 +26,8 @@ public class SimpleServerSocketChannelDemo1 {
                 if (socketChannel == null) {
                     continue;
                 }
+                //采用非阻塞网络请求
+                serverSocketChannel.configureBlocking(false);
                 ByteBuffer dst = ByteBuffer.allocate(512);
                 socketChannel.read(dst);
                 dst.flip();//切换模式
