@@ -1,4 +1,4 @@
-package com.chenyx.socketchannel;
+package com.chenyx.socketchannel.simple;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
